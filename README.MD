@@ -1,7 +1,7 @@
 # DailyBot - Code Test
 
 ## Technologies Used
-TypeScript (ts): Taking into account that the vacancy is for typing, my chosen language was this.
+TypeScript (ts): Taking into account that the vacancy is for TypeScript, my chosen language was this.
 
 Jest: I chose jest for the unit tests.
 
