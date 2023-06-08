@@ -55,7 +55,6 @@ describe("MovieService", () => {
     it("should return similar movies based on their imdb rating", () => {
       const MAX_IMDB_DIFFERENCE = 1.5;
       const referenceMovie = movies[2];
-      console.log(referenceMovie);
       const similarMovies = movieService.getSimilarMovies(referenceMovie);
       const hasSimilarRating = similarMovies.every(
         (movie) =>
