@@ -33,11 +33,13 @@ npm start
 
 ## Decisions
 
-* Get Similar Movies: It filters movies by genre and, if there are more than 5 movies, also filters by actors, but if in the filter by actors there are less than 2 movies, it returns the movies filtered by genre. Then go to filter by imdb rating taking a proximity of 1.5 points, but again if there are less than 2 movies, it returns the movies filtered before.  
+* Get Similar Movies: The getSimilarMovies method filters movies by genre and, if there are more than 5 movies, it further filters them by actors. However, if there are less than 2 movies remaining after the actor filter, it returns the movies filtered by genre only. After the filtering process, the method calculates the similarity scores based on the IMDb rating, considering a proximity of 1.5 points. If there are less than 2 movies remaining after the similarity score filter, it returns the movies filtered before. Thus giving priority to the genre and then to the other filters.
 
-* Console App: I chose to use the console to be able to show the results in a simple way, a next improvement to the program would be a simple web interface.
+* Console App: I chose to implement the movie service as a console application to provide a simple and straightforward way to display the results. However, a future improvement could be to develop a simple web interface.
 
-* Tests: I have attempted to cover the most important parts of the program with unit tests. However, due to time constraints, I couldn't cover all aspects, such as console app functionality. Given more time, I would expand the test suite to cover those areas and ensure comprehensive test coverage.
+* Tests: I have attempted to cover the most important parts of the program with unit tests. The tests focus on the logic and algorithms of the MovieService class. However, due to time constraints, I couldn't cover all aspects, such as console app functionality. Given more time, I would expand the test suite to cover those areas and ensure comprehensive test coverage.
+
+You can use tests or console app to test the application.
 
 
 
